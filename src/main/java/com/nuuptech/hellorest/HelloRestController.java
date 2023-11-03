@@ -12,8 +12,8 @@ public class HelloRestController {
 	private static final String template = "Hola, %s!";
 	private final AtomicLong counter = new AtomicLong();
 
-	@GetMapping("/greeting-userX")
-	public Greeting greeting(@RequestParam(value = "name", defaultValue = "Mexico!") String name) {
+	@GetMapping("/greeting-user13")
+	public Greeting greeting(@RequestParam(value = "name", defaultValue = "Mexico! User13") String name) {
 		long c = counter.incrementAndGet();
 		double result = 0;		
 		//System.out.print("Hola");
